@@ -1,0 +1,849 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "4"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# i am a comment\n",
+    "2 + 2"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Programming Fundamentals \n",
+    "- python as a calculator\n",
+    "- variable assignment\n",
+    "- strings\n",
+    "    - string indexing\n",
+    "    - string methods\n",
+    "- builtin function & methods\n",
+    "- conditionals & control flow\n",
+    "- lists and loops \n",
+    "- read in a file \n",
+    "- work with tuples\n",
+    "- work with dictionary\n",
+    "- function\n",
+    "- bringing everything together"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "16"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# python as a calculator\n",
+    "2 ** 4"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "3"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# module which returns the remainder after a division\n",
+    "15 % 4 "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1"
+      ]
+     },
+     "execution_count": 7,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# floor division \n",
+    "15 // 8"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (<ipython-input-9-4f3fbb1c3bd6>, line 3)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-9-4f3fbb1c3bd6>\"\u001b[0;36m, line \u001b[0;32m3\u001b[0m\n\u001b[0;31m    murray = my dog\u001b[0m\n\u001b[0m                  ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+     ]
+    }
+   ],
+   "source": [
+    "# variable assignments \n",
+    "murray = 'my dog'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "savings = 2000\n",
+    "switch = 300 \n",
+    "tax = switch * 0.1\n",
+    "switch += tax"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "330.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(switch)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1340.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(savings)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Dengue and Scurvy are the names of Lois'dog\n"
+     ]
+    }
+   ],
+   "source": [
+    "# strings\n",
+    "dogs = ['Dengue','Scurvy','Madison','Bernardo']\n",
+    "s1 = \"{} and {} are the names of Lois'dog\".format(dogs[0],dogs[1])\n",
+    "print(s1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Dengue', 'Scurvy', 'Dolce', 'Bernardo']\n"
+     ]
+    }
+   ],
+   "source": [
+    "dogs[2] = 'Dolce'\n",
+    "print(dogs)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "__types of data that are mutable__:\n",
+    "- lists, dictionaries, sets <br>\n",
+    "\n",
+    "__types of data that are immutable__:\n",
+    "- integer, floats, strings and tuples"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[2, 3.14, 100, 4000, 104857600000000000000000000]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# built-in functions and methods \n",
+    "len(dogs)\n",
+    "unsorted_list = [100, 2, 3.14, 4000, 20**20]\n",
+    "print(sorted(unsorted_list))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# built in methods for strings \n",
+    "example_str = 'rishi'\n",
+    "example_str = example_str.upper()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'judah'"
+      ]
+     },
+     "execution_count": 25,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# .strip()\n",
+    "student_name1 = '    judah '\n",
+    "student_name1.strip()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Dengue', 'Scurvy', 'Dolce', 'Bernardo', 'Murray', 'Murray']\n"
+     ]
+    }
+   ],
+   "source": [
+    "# built in append()\n",
+    "dogs.append('Murray')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 32,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# conditionals & control flows \n",
+    "# comparators : ==, !=, >=, >, <=, <\n",
+    "# bolean operators : and, or, not"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n"
+     ]
+    }
+   ],
+   "source": [
+    "# loops\n",
+    "# for loops and while loops\n",
+    "for i in range(10):\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n",
+      "10\n",
+      "11\n"
+     ]
+    }
+   ],
+   "source": [
+    "# for while loops, the loop will execute as long as the statement holds true \n",
+    "example_int = 1\n",
+    "while example_int < 11:\n",
+    "    example_int += 1\n",
+    "    print(example_int)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n",
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    "example_int = 1\n",
+    "while example_int < 11:\n",
+    "    print(example_int)\n",
+    "    example_int += 1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Some quotes from a nice book\n",
+      "\"Everybody is identical in their secret unspoken belief that way deep down they are different from everyone else.\"\n",
+      "\"I do things like get in a taxi and say, \"The library, and step on it.\"\n",
+      "The truth will set you free. But not until it is finished with you.\n",
+      "“You will become way less concerned with what other people think of you when you realize how seldom they do.”\n",
+      "“Mario, what do you get when you cross an insomniac, an unwilling agnostic and a dyslexic?\"\n",
+      "\n",
+      "\"I give.\"\n",
+      "\n",
+      "\"You get someone who stays up all night torturing himself mentally over the question of whether or not there's a dog.” \n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "<function TextIOWrapper.close()>"
+      ]
+     },
+     "execution_count": 40,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# reading in a file\n",
+    "f = open('./your/path/here/some_text.txt')\n",
+    "f_content = f.read()\n",
+    "print(f_content)\n",
+    "f.close"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Some \n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "<function TextIOWrapper.close()>"
+      ]
+     },
+     "execution_count": 45,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "f = open('some_text.txt')\n",
+    "f_content = f.readline(5)\n",
+    "print(f_content)\n",
+    "f.close"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Some quotes from a nice book\\n', '\"Everybody is identical in their secret unspoken belief that way deep down they are different from everyone else.\"\\n', '\"I do things like get in a taxi and say, \"The library, and step on it.\"\\n', 'The truth will set you free. But not until it is finished with you.\\n', '“You will become way less concerned with what other people think of you when you realize how seldom they do.”\\n', '“Mario, what do you get when you cross an insomniac, an unwilling agnostic and a dyslexic?\"\\n', '\\n', '\"I give.\"\\n', '\\n', '\"You get someone who stays up all night torturing himself mentally over the question of whether or not there\\'s a dog.” ']\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "<function TextIOWrapper.close()>"
+      ]
+     },
+     "execution_count": 46,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "f = open('some_text.txt')\n",
+    "f_content = f.readlines()\n",
+    "print(f_content)\n",
+    "f.close"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Some quotes from a nice book\n",
+      "\"Everybody is identical in their secret unspoken belief that way deep down they are different from everyone else.\"\n",
+      "\"I do things like get in a taxi and say, \"The library, and step on it.\"\n",
+      "The truth will set you free. But not until it is finished with you.\n",
+      "“You will become way less concerned with what other people think of you when you realize how seldom they do.”\n",
+      "“Mario, what do you get when you cross an insomniac, an unwilling agnostic and a dyslexic?\"\n",
+      "\n",
+      "\"I give.\"\n",
+      "\n",
+      "\"You get someone who stays up all night torturing himself mentally over the question of whether or not there's a dog.” \n"
+     ]
+    }
+   ],
+   "source": [
+    "with open('some_text.txt','r') as f:\n",
+    "    f_content = f.read()\n",
+    "    print(f_content)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Some quotes from a nice book\n",
+      "\n",
+      "\"Everybody is identical in their secret unspoken belief that way deep down they are different from everyone else.\"\n",
+      "\n",
+      "\"I do things like get in a taxi and say, \"The library, and step on it.\"\n",
+      "\n",
+      "The truth will set you free. But not until it is finished with you.\n",
+      "\n",
+      "“You will become way less concerned with what other people think of you when you realize how seldom they do.”\n",
+      "\n",
+      "“Mario, what do you get when you cross an insomniac, an unwilling agnostic and a dyslexic?\"\n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "with open('some_text.txt','r') as f:\n",
+    "    f_content = f.readline()\n",
+    "    while len(f_content) > 1:\n",
+    "    # while f_content != \"\\n\"\n",
+    "        print(f_content)\n",
+    "        f_content = f.readline()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[('Dan', 'Board games'), ('Grace', 'Baking'), ('Justin', 'Piano'), ('Luke', 'Writing')]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# tuples\n",
+    "students = ['Dan','Grace','Justin','Luke']\n",
+    "hobbies = ['Board games','Baking','Piano','Writing']\n",
+    "print(list(zip(students,hobbies)))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "airpods\n"
+     ]
+    }
+   ],
+   "source": [
+    "# important thing for tuple is packing and unpacking\n",
+    "\n",
+    "# tuple packing\n",
+    "j = (\"airpods\",\"yeezys\",\"nyc apartments\")\n",
+    "\n",
+    "# tuple unpacking\n",
+    "overpriced_headphones, overpriced_sneakers, overpriced_apartments = j\n",
+    "print(overpriced_headphones)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 60,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# dictionary\n",
+    "# syntax of dictionary is d =  {key1:value1, key2:value2,key3:value3}\n",
+    "# to index the value of dictionary, we will use the syntax d[key1]\n",
+    "my_dict = dict()\n",
+    "my_dict = {}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 62,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'one': 1, 'two': 2, 'three': 3}\n"
+     ]
+    }
+   ],
+   "source": [
+    "my_dict['one'] = 1\n",
+    "my_dict['two'] = 2\n",
+    "my_dict['three'] = 3\n",
+    "print(my_dict)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 63,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "one\n",
+      "two\n",
+      "three\n"
+     ]
+    }
+   ],
+   "source": [
+    "for key in my_dict:\n",
+    "    print(key)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 64,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n"
+     ]
+    }
+   ],
+   "source": [
+    "for key in my_dict:\n",
+    "    print(my_dict[key])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 65,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# changing the key in a dictionary \n",
+    "my_dict['uno'] = my_dict['one']\n",
+    "del my_dict['one']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 67,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# functions \n",
+    "def my_func():\n",
+    "    pass"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 68,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "i am a function\n"
+     ]
+    }
+   ],
+   "source": [
+    "# a function that does not have an argument\n",
+    "def func_without_argument():\n",
+    "    print('i am a function')\n",
+    "func_without_argument()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 69,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# a function that returns true if two strings are identical and returns false if not\n",
+    "def evaluates_strings(string1, string2):\n",
+    "    \"\"\"\n",
+    "    compares whether string1 and string 2 are identical \n",
+    "    \"\"\"\n",
+    "    if string1 == string2:\n",
+    "        return True\n",
+    "    else:\n",
+    "        return False\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 72,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def evaluates_strings_method2(string1, string2):\n",
+    "    \"\"\"\n",
+    "    same thing as the function above\n",
+    "    \"\"\"\n",
+    "    return string1 == string2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 74,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# bringing everything together \n",
+    "\n",
+    "# write a function that reads in a grade file, return a dictionary such that the key is the grade, and values are a list of\n",
+    "# student id's that earned that grade\n",
+    "\n",
+    "# {4.5:[10,12,5], 3:[2,8]}\n",
+    "\n",
+    "def read_grades(gradefile):\n",
+    "    \"\"\"\n",
+    "    see above\n",
+    "    \"\"\"\n",
+    "    # task 1: skipping over the headers\n",
+    "    line = gradefile.readline()\n",
+    "    while line != \"\\n\":\n",
+    "        line = gradefile.readline()\n",
+    "    \n",
+    "    # task2 = populate a dictionary\n",
+    "    grade_dict = {}\n",
+    "    line = gradefile.readline()\n",
+    "    while line != \"\":\n",
+    "        student_id = line[:2]\n",
+    "        grade = float(line[2:].strip())\n",
+    "        \n",
+    "        if grade not in grade_dict:\n",
+    "            grade_dict[grade] = [student_id]\n",
+    "        else:\n",
+    "            grade_dict[grade].append(student_id)\n",
+    "        line = gradefile.readline()\n",
+    "    return grade_dict\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 76,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{4.0: ['01', '04', '11', '18', '23', '27'],\n",
+       " 5.0: ['02', '05', '14', '22', '25', '29'],\n",
+       " 2.0: ['03', '06', '17'],\n",
+       " 2.5: ['07', '12', '19'],\n",
+       " 4.5: ['08', '13', '21', '24', '28', '30'],\n",
+       " 3.0: ['09', '15'],\n",
+       " 3.5: ['10', '20', '26'],\n",
+       " 1.0: ['16']}"
+      ]
+     },
+     "execution_count": 76,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "gradefile = open('grades.txt')\n",
+    "read_grades(gradefile)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 77,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "gradefile.close()"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.0"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}

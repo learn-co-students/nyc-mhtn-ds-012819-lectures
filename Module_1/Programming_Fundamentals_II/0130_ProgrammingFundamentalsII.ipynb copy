@@ -1,0 +1,617 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Programming Fundamentals II - Tools for Data Science \n",
+    "Agenda today:\n",
+    "- Advanced function implementation\n",
+    "- Lambda function\n",
+    "- List comprehension\n",
+    "\n",
+    "After this class, students will be able to:\n",
+    "- lay out plan and execute advanced functions \n",
+    "- understand lambda function syntax and write lambda function in conjunction with other python operations\n",
+    "- understand list comprehension and replace for loop with it \n",
+    "\n",
+    "Assignment after today:\n",
+    "- The dictionary ball lab"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Part I - advanced function"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### function 1 - count numbers of repeats in a string"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Advanced function\n",
+    "# implement a function that counts how many times a string repeats itself \n",
+    "def count_repeat(s):\n",
+    "    \"\"\"\n",
+    "    write a function that takes a string as an input and returns an integer as an output\n",
+    "    count_repeat('abba')\n",
+    "    >>> 1\n",
+    "    count_repeat('meow')\n",
+    "    >>> 0\n",
+    "    coutn_repeat('mississippi')\n",
+    "    >>> 3\n",
+    "    \n",
+    "    \"\"\"\n",
+    "    repeats = 0\n",
+    "    for i in range(len(s)-1):\n",
+    "        if s[i] == s[i+1]:\n",
+    "            repeats = repeats + 1\n",
+    "            \n",
+    "    return repeats"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'woem'"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# define a function that evaluates whether a string is a palindrome\n",
+    "# tacocat is a palindrome, but meow is not; kayak, civic, etc \n",
+    "# a few ways to implement this algorithm are:\n",
+    "\n",
+    "# first, define a helper function reverse that reverses the strings \n",
+    "def reverse(s):\n",
+    "    \"\"\"\n",
+    "    take in a string and return the reverse of it \n",
+    "    \"\"\"\n",
+    "    rev = \"\"\n",
+    "    for i in s:\n",
+    "        rev = rev + i\n",
+    "    return rev\n",
+    "\n",
+    "reverse('meow')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "t\n",
+      "a\n",
+      "c\n",
+      "o\n",
+      "c\n",
+      "a\n",
+      "t\n"
+     ]
+    }
+   ],
+   "source": [
+    "s = 'tacocat'\n",
+    "for i in s:\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 28,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "def palindrome_1(s):\n",
+    "    return s == reverse(s)\n",
+    "\n",
+    "palindrome_1('dented')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# what are some different ways to implement this algorithm?\n",
+    "def is_palindrome_2(s):\n",
+    "\n",
+    "    # The number of chars in s.\n",
+    "    n = len(s)\n",
+    "\n",
+    "    # Compare the first half of s to the reverse of the second half.\n",
+    "    # Omit the middle character of an odd-length string.\n",
+    "    return s[:n // 2] == reverse(s[(n - n // 2):])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# third one\n",
+    "def is_palindrome_3(s):\n",
+    "    # s[i] and s[j] are the next pair of characters to compare.\n",
+    "    i = 0\n",
+    "    j = len(s) - 1\n",
+    "\n",
+    "    # The characters in s[:i] have been successfully compared to those in s[j:].\n",
+    "    while i < j and s[i] == s[j]:\n",
+    "        i = i + 1\n",
+    "        j = j - 1\n",
+    "\n",
+    "    # If we exited because we successfully compared all pairs of characters,\n",
+    "    # then j <= i.\n",
+    "    return j <= i"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# are there other strategies for implementing this function?"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "___\n",
+    "Special function arguments:<br>\n",
+    "**\\*args and \\*\\*kwargs** \n",
+    "- \\*args take in *unlimited* amount of arguments for functions, which \n",
+    "    - prevents your program from crashing\n",
+    "    - allows flexibility \n",
+    "- \\*\\*kwargs takes in *unlimited* amount of key words/unordered arguments for function\n",
+    "    - the name of the argument should be explicitly declared\n",
+    "    - the arguments get interpreted as dictionary instead of list"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['A', 'B', 'C', 'D', 'tacocat']\n",
+      "['noon']\n"
+     ]
+    }
+   ],
+   "source": [
+    "# *args example\n",
+    "def func_with_many_args(*args):\n",
+    "    for arg in args:\n",
+    "        print(arg)\n",
+    "l = ['A','B','C','D','tacocat']\n",
+    "n = ['noon']\n",
+    "func_with_many_args(l,n)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "first argument is the regular normal_argument\n",
+      "another arg through *args : special_arg1\n",
+      "another arg through *args : special_arg2\n",
+      "another arg through *args : special_arg3\n"
+     ]
+    }
+   ],
+   "source": [
+    "# you can use it in conjunction with normal arguments \n",
+    "def func_with_normal_and_special_args(normal, *args):\n",
+    "    print('first argument is the regular', normal)\n",
+    "    for arg in args:\n",
+    "        print(\"another arg through *args :\", arg)\n",
+    "\n",
+    "func_with_normal_and_special_args('normal_argument','special_arg1','special_arg2','special_arg3')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "x 15\n",
+      "y 16\n"
+     ]
+    }
+   ],
+   "source": [
+    "def func_with_kwargs(**kwargs):\n",
+    "    # because the arguments get interpreted as dictionary, we need to follow the dict syntax\n",
+    "    for key,value in kwargs.items():\n",
+    "        print(key,value)\n",
+    "func_with_kwargs(x = 15, y = 16)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Part II - lambda function \n",
+    "The lambda function is anonymous function in python. The syntax is __lambda arguments : expression.__ <br>\n",
+    "We use lambda functions when we require a nameless function for a short period of time.\n",
+    "\n",
+    "In Python, we generally use it as an argument to a higher-order function (a function that takes in other functions as arguments). Lambda functions are used along with built-in functions like filter(), map() and reduce() etc. <br>\n",
+    "\n",
+    "Lambda function can also come really handy when we are working with feature engineering. "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "20\n"
+     ]
+    }
+   ],
+   "source": [
+    "# example 1:\n",
+    "func_1 = lambda x: x+10\n",
+    "print(func_1(10))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def plus_ten(x):\n",
+    "    return x+10"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "8\n"
+     ]
+    }
+   ],
+   "source": [
+    "# example 2: with more arguments\n",
+    "func_2 = lambda x,y : x**y \n",
+    "print(func_2(2,3))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 40,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# using lambda more other operations \n",
+    "func_3 = lambda x: False if x//2 == 0 else True\n",
+    "func_3(9)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### Using it in conjunction with map(), reduce(), and filter"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[14, 35, 70, 42, 91, 126]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# map applies a function to a collection of objects (lists)\n",
+    "# without map\n",
+    "# create a list that's the age of dogs, and multiply it by 7 to get their age in human years\n",
+    "age_of_dogs = [2,5,10,6,13,18]\n",
+    "age_of_dogs_human_years = []\n",
+    "for age in age_of_dogs:\n",
+    "    age_of_dogs_human_years.append(age*7)\n",
+    "print(age_of_dogs_human_years)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[14, 35, 70, 42, 91, 126]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# with map\n",
+    "age_of_dog_human_years = list((map(lambda x: x*7, age_of_dogs)))\n",
+    "print(age_of_dog_human_years)\n",
+    "# return the same results but way less code"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[{'name': 'dolce', 'age': 5}]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# filter - filtering thru a dictionary \n",
+    "# syntax: filter(function_object, iterable)\n",
+    "# function_object is called for each element of the iterable and filter returns only those element for which the \n",
+    "# function_object returns true.\n",
+    "dog_dictionary = [{'name': 'dolce', 'age': 11}, {'name': 'dengue', 'age': 6}]\n",
+    "which_dog = list(filter(lambda x : x['name'] == 'dolce', dog_dictionary))\n",
+    "print(which_dog)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[12, 30, 30]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# filter thru a list \n",
+    "age_of_cats = [12, 15, 30, 25, 30, 27] # i secretly believe cats actually live forever\n",
+    "even_aged_cats = list(filter(lambda x : x % 2 == 0, age_of_cats)) \n",
+    "print(even_aged_cats)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 55,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "139\n"
+     ]
+    }
+   ],
+   "source": [
+    "# reduce: The function reduce(func, seq) continually applies the function\n",
+    "#func() to the sequence seq. It returns a single value. \n",
+    "from functools import reduce\n",
+    "age_of_cat_product = reduce((lambda x,y: x+y), age_of_cats)\n",
+    "print(age_of_cat_product)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Part III - List Comprehension\n",
+    "List comprehensions provide a concise way to create lists. Syntax: __[expression for item in list]__"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 57,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[12, 15, 30, 25, 30, 27]\n",
+      "[84, 105, 210, 175, 210, 189]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(age_of_cats)\n",
+    "age_of_cats_in_human_years = [cat*7 for cat in age_of_cats]\n",
+    "\n",
+    "# it is equivalent to:\n",
+    "age_of_cats_in_human_years = []\n",
+    "for cat in age_of_cats:\n",
+    "    age_of_cats_in_human_years.append(cat*7)\n",
+    "    \n",
+    "print(age_of_cats_in_human_years)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[84, 210, 210]\n"
+     ]
+    }
+   ],
+   "source": [
+    "num_list = [cat*7 for cat in age_of_cats if cat % 2 == 0]\n",
+    "print(num_list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 59,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[12]"
+      ]
+     },
+     "execution_count": 59,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# list comprehension used in conjunction with conditionals -> sort of like filtering\n",
+    "age_of_cats_in_human_years_still_alive = [cat for cat in age_of_cats if cat*7 < 100]\n",
+    "age_of_cats_in_human_years_still_alive"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 62,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Help on built-in function print in module builtins:\n",
+      "\n",
+      "print(...)\n",
+      "    print(value, ..., sep=' ', end='\\n', file=sys.stdout, flush=False)\n",
+      "    \n",
+      "    Prints the values to a stream, or to sys.stdout by default.\n",
+      "    Optional keyword arguments:\n",
+      "    file:  a file-like object (stream); defaults to the current sys.stdout.\n",
+      "    sep:   string inserted between values, default a space.\n",
+      "    end:   string appended after the last value, default a newline.\n",
+      "    flush: whether to forcibly flush the stream.\n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "help(print)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Good resources for list comprehension:\n",
+    "- [Datacamp Tutorial](https://www.datacamp.com/community/tutorials/python-list-comprehension)\n",
+    "- [Map filter reduce python documentation](http://book.pythontips.com/en/latest/map_filter.html)"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.0"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
