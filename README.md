@@ -19,30 +19,3 @@
 | 11. XML and CSS| [Code (091718)](https://github.com/learn-co-students/nyc-web-091718/blob/master/12-active-record-cli-review/DOTENV_README.md) | [Video (old recording - 5 min)](https://youtu.be/CgdwkzKbw8M) |
 | 12. Pandas I | [Code](https://github.com/learn-co-students/nyc-mhtn-web-121018/tree/master/12-active-record-review) | [Video](https://youtu.be/plxya_GJnog) |
 | 13. Pandas II | [Code](https://github.com/learn-co-students/nyc-mhtn-web-121018/tree/master/13-intro-to-tdd) | [Video](https://youtu.be/nEe6sPAg0sU) |
-
-## Module 2 💎
-| Topic            | Code                | Video                |
-| -----            | ----                | -----                |
-| 14. Intro to the Internet | [Code](https://github.com/learn-co-students/nyc-mhtn-web-121018/tree/master/14-intro-to-internet) | [Video](https://youtu.be/ReypYFwebBo) |
-| 15. Intro to Sinatra & MVC | [Code](https://github.com/learn-co-students/nyc-mhtn-web-121018/tree/master/15-intro-sinatra-mvc) | [Video](https://youtu.be/7pF73EwNqe8) |
-| 16. Sinatra Forms & REST | [Code](https://github.com/learn-co-students/nyc-mhtn-web-121018/tree/master/16-sinatra-forms-rest) | [Video](https://youtu.be/rvkZ4VOACwk) |
-| 17. RESTful Routes | [Code](https://github.com/learn-co-students/nyc-mhtn-web-121018/tree/master/17-sinatra-rest) & [Slides](https://docs.google.com/presentation/d/1no3yw_Vw4hBzGDlsEDcubvFnowi-Exjg9FW_VJid_U0/edit) | Videos: [part 1](https://youtu.be/exu4V8Q6TEs) && [part 2](https://youtu.be/n9TQUkDJBfs) |
-| 18. Sinatra Associations | [Code](https://github.com/learn-co-students/nyc-mhtn-web-121018/tree/master/18-sinatra-associations-forms) | [Video](https://youtu.be/RRuGZuclQcE) |
-| 19. Intro to Rails | [Code](https://github.com/learn-co-students/nyc-mhtn-web-121018/tree/master/19-intro-to-rails) | [Video](https://youtu.be/V_kb809YBtY) |
-| 20. Rails Forms & REST | [Code](https://github.com/learn-co-students/nyc-mhtn-web-121018/tree/master/20-rails-forms-rest) | [Video](https://youtu.be/AeSGY3AaxEc) |
-| 21. Rails Associations & Forms | [Code](https://github.com/learn-co-students/nyc-mhtn-web-121018/tree/master/21-rails-associations) | [Video](https://youtu.be/bAeI4V9SZfI) |
-| 22. Rails Forms & Validations | [Code](https://github.com/learn-co-students/nyc-mhtn-web-121018/tree/master/22-rails-forms-validations) | [Video](https://youtu.be/OHWFVOK7J78) |
-| 23. Cookies and Sessions | [Code](https://github.com/learn-co-students/nyc-mhtn-web-121018/tree/master/23-rails-sessions-cookies) | [Video](https://youtu.be/-vrUbOZSCyc) |
-| 24. Intro to CSS | [Code](https://github.com/learn-co-students/nyc-mhtn-web-121018/tree/master/24-css) | [Video](https://youtu.be/f5G6CWVZvw0) |
-| 25. Rails Auth | [Code](https://github.com/learn-co-students/nyc-mhtn-web-121018/tree/master/25-rails-auth) | Videos: [part 1](https://youtu.be/Kb8bXAV2uNA) && [part 2](https://youtu.be/RWZZKYC19Y0) |
-
-## Module 3 🤠
-| Topic            | Code                | Video                |
-| -----            | ----                | -----                |
-| 26. Intro to JS | [Code](https://github.com/learn-co-students/nyc-mhtn-web-121018/tree/master/26-intro-to-js) | [Video](https://youtu.be/7KpwAH31PiM) |
-| 27. Scopes, Closures, Callbacks | [Code](https://github.com/learn-co-students/nyc-mhtn-web-121018/tree/master/27-js-scopes-closures-callbacks) | [Video](https://youtu.be/VY0ajJTrOa4) |
-| 28. Intro to the DOM | [Code](https://github.com/learn-co-students/nyc-mhtn-web-121018/tree/master/28-dom-intro) | [Video](https://youtu.be/sHvwFYIzYdg) |
-| 29. Intro to Events | [Code](https://github.com/learn-co-students/nyc-mhtn-web-121018/tree/master/29-events-intro) | Videos: [part 1](https://youtu.be/iYnQjjLjtUM) && [part 2](https://youtu.be/OAQbijkIieU) |
-| 30. Intro to AJAX| [Code](https://github.com/learn-co-students/nyc-mhtn-web-121018/tree/master/29-intro-to-ajax) | Videos: [VIDEO](https://youtu.be/MR0geWiJKkg) |
-| 31. AJAX and Fetch | [Code](https://github.com/learn-co-students/nyc-mhtn-web-121018/tree/master/30-ajax-crud) | Videos: [part 1 POST](https://youtu.be/V1t8lOH4cNs) [Part 2 PATCH](https://youtu.be/8ju4NvGAE20)|
-| 32. Intro to Fn Programming | [Code](https://github.com/learn-co-students/nyc-mhtn-web-121018/tree/master/31-intro-to-fn-programming) | [Video](https://youtu.be/Jtyy4YQaA30)|
