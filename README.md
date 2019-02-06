@@ -3,7 +3,7 @@
 ## Calendar
 <iframe src="https://calendar.google.com/calendar/embed?src=flatironschool.com_ujcges3b0h07m5plbjdfptqbk4%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
-## Module 1
+## Module 1 💙
 | Topic            | Code                | Video                |
 | -----            | ----                | -----                |
 | 1. What is data science? | [Code](https://github.com/learn-co-students/nyc-mhtn-ds-012819-lectures/blob/master/Module_1/What_Is_Data_Science/0128_Welcome.pdf) | [Video]() |
