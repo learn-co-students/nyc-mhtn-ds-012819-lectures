@@ -13,7 +13,7 @@
 | 5. Foundations of Probability Distribution | [Code](https://github.com/learn-co-students/nyc-mhtn-ds-012819-lectures/blob/master/Module_1/Probabiliy_Distribution/Statistical_Distributions_I%20copy.pdf) | [Video]() |
 | 6. Data Visualization | [Code](https://github.com/learn-co-curriculum/nyc-mhtn-ds-012819/blob/master/Module_1/Data_Visualization/Data_Visualization.ipynb) | [Video]() |
 | 7. Object-Oriented Programming I| [Code](https://github.com/learn-co-curriculum/nyc-mhtn-ds-012819/blob/master/Module_1/Object_Oriented_Programming_I/OOP%20Part%201-Copy1.ipynb) | [Video]() |
-| 8. Object Oriented Programming II | [Code]() | [Video]()|
+| 8. Object Oriented Programming II | [Code](https://github.com/learn-co-students/nyc-mhtn-ds-012819-lectures/blob/master/Module_1/Object_Oriented_Programming_I/OOP%20Part%202.ipynb) | [Video]()|
 | 9. API & JSON | [Code]() | [Video]() |
 | 10. Webscraping | [Code]() | [Video]() |
 | 11. XML and CSS| [Code]() | [Video ]() |
