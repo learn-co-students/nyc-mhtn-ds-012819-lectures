@@ -17,5 +17,19 @@
 | 9. API & JSON | [Code]() | [Video]() |
 | 10. Webscraping | [Code]() | [Video]() |
 | 11. XML and CSS| [Code]() | [Video ]() |
-| 12. Pandas I | [Code]() | [Video]() |
+| 12. Pandas I | [Code](https://github.com/learn-co-students/nyc-mhtn-ds-012819-lectures/blob/master/Module_1/Pandas/Pandas_I.ipynb) | [Video]() |
 | 13. Pandas II | [Code]() | [Video]() |
+
+## Module 2 💖
+| Topic            | Code                | Video                |
+| -----            | ----                | -----                |
+| 1. SQL I | [Code](https://github.com/learn-co-students/nyc-mhtn-ds-012819-lectures/blob/master/Module_1/What_Is_Data_Science/0128_Welcome.pdf) | [Video]() |
+| 2. SQLite II| [Code]() | [Video]() |
+| 3. Statistical Distribution I: The Gaussian Distribution| [Code](https://github.com/learn-co-curriculum/nyc-mhtn-ds-012819/blob/master/Module_1/Programming_Fundamentals_I/012919_programmingFundamentalsI.ipynb)|
+| 4. Statistical Distribution II | [Code](https://github.com/learn-co-curriculum/nyc-mhtn-ds-012819/blob/master/Module_1/Programming_Fundamentals_II/0130_ProgrammingFundamentalsII.ipynb) |
+| 5. Hypothesis Testing, Z and T test | [Code](https://github.com/learn-co-curriculum/nyc-mhtn-ds-012819/blob/master/Module_1/Probability_Fundamentals/0131_Foundations_of_Probability.ipynb) |
+| 6. Conditional Probability I - Thinking Bayesian | [Code](https://github.com/learn-co-students/nyc-mhtn-ds-012819-lectures/blob/master/Module_1/Probabiliy_Distribution/Statistical_Distributions_I%20copy.pdf) | [Video]() |
+| 7. Conditional Probability II - Bayesian Application| [Code](https://github.com/learn-co-curriculum/nyc-mhtn-ds-012819/blob/master/Module_1/Data_Visualization/Data_Visualization.ipynb) | [Video]() |
+| 8. Linear Regression I: Basic LR and cost function| [Code](https://github.com/learn-co-curriculum/nyc-mhtn-ds-012819/blob/master/Module_1/Object_Oriented_Programming_I/OOP%20Part%201-Copy1.ipynb) | [Video]() |
+| 9. Linear Regression II: Multiple Linear Regression| [Code](https://github.com/learn-co-students/nyc-mhtn-ds-012819-lectures/blob/master/Module_1/Object_Oriented_Programming_I/OOP%20Part%202.ipynb) | [Video]()|
+| 10. Regularization| [Code]() | [Video]() |
