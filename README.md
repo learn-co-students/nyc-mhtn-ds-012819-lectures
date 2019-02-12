@@ -18,7 +18,7 @@
 | 10. Webscraping | [Code]() | [Video]() |
 | 11. XML and CSS| [Code]() | [Video ]() |
 | 12. Pandas I | [Code](https://github.com/learn-co-students/nyc-mhtn-ds-012819-lectures/blob/master/Module_1/Pandas/Pandas_I.ipynb) | [Video]() |
-| 13. Pandas II | [Code]() | [Video]() |
+| 13. Pandas II | [Code](https://github.com/learn-co-students/nyc-mhtn-ds-012819-lectures/blob/master/Module_1/Pandas/Pandas_II.ipynb) | [Video]() |
 
 ## Module 2 💖
 | Topic            | Code                | Video                |
