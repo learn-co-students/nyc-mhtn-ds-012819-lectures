@@ -23,15 +23,15 @@
 ## Module 2 💖
 | Topic            | Code                | Video                |
 | -----            | ----                | -----                |
-| 1. SQL I | [Code](https://github.com/learn-co-students/nyc-mhtn-ds-012819-lectures/blob/master/Module_1/What_Is_Data_Science/0128_Welcome.pdf) | [Video]() |
+| 1. SQL I | [Code](https://github.com/learn-co-students/nyc-mhtn-ds-012819-lectures/blob/master/Module_2/Intro_SQL/Intro_to_Sql.ipynb) | [Video]() |
 | 2. SQLite II| [Code]() | [Video]() |
-| 3. Statistical Distribution I: The Gaussian Distribution| [Code](https://github.com/learn-co-curriculum/nyc-mhtn-ds-012819/blob/master/Module_1/Programming_Fundamentals_I/012919_programmingFundamentalsI.ipynb)|
-| 4. Statistical Distribution II | [Code](https://github.com/learn-co-curriculum/nyc-mhtn-ds-012819/blob/master/Module_1/Programming_Fundamentals_II/0130_ProgrammingFundamentalsII.ipynb) |
-| 5. Hypothesis Testing | [Code](https://github.com/learn-co-curriculum/nyc-mhtn-ds-012819/blob/master/Module_1/Probability_Fundamentals/0131_Foundations_of_Probability.ipynb) |
-| 6. Z Test and T test | [Code](https://github.com/learn-co-curriculum/nyc-mhtn-ds-012819/blob/master/Module_1/Probability_Fundamentals/0131_Foundations_of_Probability.ipynb) |
-| 7. Statistical Power, Errors and Effect Size | [Code](https://github.com/learn-co-students/nyc-mhtn-ds-012819-lectures/blob/master/Module_1/Probabiliy_Distribution/Statistical_Distributions_I%20copy.pdf) | [Video]() |
-| 8. Conditional Probability I - Thinking Bayesian | [Code](https://github.com/learn-co-students/nyc-mhtn-ds-012819-lectures/blob/master/Module_1/Probabiliy_Distribution/Statistical_Distributions_I%20copy.pdf) | [Video]() |
-| 9. Conditional Probability II - Bayesian Application| [Code](https://github.com/learn-co-curriculum/nyc-mhtn-ds-012819/blob/master/Module_1/Data_Visualization/Data_Visualization.ipynb) | [Video]() |
-| 10. Linear Regression I: Basic LR and cost function| [Code](https://github.com/learn-co-curriculum/nyc-mhtn-ds-012819/blob/master/Module_1/Object_Oriented_Programming_I/OOP%20Part%201-Copy1.ipynb) | [Video]() |
-| 11. Linear Regression II: Multiple Linear Regression| [Code](https://github.com/learn-co-students/nyc-mhtn-ds-012819-lectures/blob/master/Module_1/Object_Oriented_Programming_I/OOP%20Part%202.ipynb) | [Video]()|
+| 3. Statistical Distribution I: The Gaussian Distribution| [Code]()|
+| 4. Statistical Distribution II | [Code]() |
+| 5. Hypothesis Testing | [Code]() |
+| 6. Z Test and T test | [Code]() |
+| 7. Statistical Power, Errors and Effect Size | [Code]() | [Video]() |
+| 8. Conditional Probability I - Thinking Bayesian | [Code]() | [Video]() |
+| 9. Conditional Probability II - Bayesian Application| [Code]() | [Video]() |
+| 10. Linear Regression I: Basic LR and cost function| [Code]() | [Video]() |
+| 11. Linear Regression II: Multiple Linear Regression| [Code]() | [Video]()|
 | 12. Regularization| [Code]() | [Video]() |
