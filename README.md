@@ -30,8 +30,8 @@
 | 5. Hypothesis Testing | [Code]() |
 | 6. Z Test and T test | [Code]() |
 | 7. Statistical Power, Errors and Effect Size | [Code]() | [Video]() |
-| 8. Conditional Probability I - Thinking Bayesian | [Code]() | [Video]() |
-| 9. Conditional Probability II - Bayesian Application| [Code]() | [Video]() |
+| 8. ANOVA - ANalysis Of VAriance | [Code]() | [Video]() |
+| 9. Conditional Probability - Thinking Bayesian| [Code]() | [Video]() |
 | 10. Linear Regression I: Basic LR and cost function| [Code]() | [Video]() |
 | 11. Linear Regression II: Multiple Linear Regression| [Code]() | [Video]()|
 | 12. Regularization| [Code]() | [Video]() |
