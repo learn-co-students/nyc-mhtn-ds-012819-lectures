@@ -25,13 +25,13 @@
 | -----            | ----                | -----                |
 | 1. SQL I | [Code](https://github.com/learn-co-students/nyc-mhtn-ds-012819-lectures/blob/master/Module_2/Intro_SQL/Intro_to_Sql.ipynb) | [Video]() |
 | 2. SQLite II| [Code]() | [Video]() |
-| 3. Statistical Distribution I: The Gaussian Distribution| [Code]()|
-| 4. Statistical Distribution II | [Code]() |
-| 5. Hypothesis Testing | [Code]() |
-| 6. Z Test and T test | [Code]() |
-| 7. Statistical Power, Errors and Effect Size | [Code]() | [Video]() |
-| 8. ANOVA - ANalysis Of VAriance | [Code]() | [Video]() |
-| 9. Conditional Probability - Thinking Bayesian| [Code]() | [Video]() |
-| 10. Linear Regression I: Basic LR and cost function| [Code]() | [Video]() |
-| 11. Linear Regression II: Multiple Linear Regression| [Code]() | [Video]()|
-| 12. Regularization| [Code]() | [Video]() |
+| 3. Statistical Distribution I: The Gaussian Distribution| [Code](https://github.com/learn-co-students/nyc-mhtn-ds-012819-lectures/blob/master/Module_2/Sampling_And_NormalDistribution/Normal%20Distribution.pdf)|
+| 4. Statistical Distribution II | [Code](https://github.com/learn-co-students/nyc-mhtn-ds-012819-lectures/blob/master/Module_2/Poisson_Exponential_Uniform/Statistical_Distribution_II.ipynb) |
+| 5. Hypothesis Testing | [Code](https://github.com/learn-co-students/nyc-mhtn-ds-012819-lectures/blob/master/Module_2/Ttest_hypothesisTesting/P%20Values.pdf) |
+| 6. Z Test and T test | [Code](https://github.com/learn-co-students/nyc-mhtn-ds-012819-lectures/blob/master/Module_2/Ttest_hypothesisTesting/t-tests%202.pdf)| [Video] ()
+| 7. Statistical Power, Errors and Effect Size | [Code](https://github.com/learn-co-students/nyc-mhtn-ds-012819-lectures/blob/master/Module_2/Power_EffectSize_Error/Power_EffectSize_Error.ipynb) | [Video]() |
+| 8. Conditional Probability | [Code]() | [Video]() |
+| 9. Linear Models I: Simple Linear Regression| [Code]() | [Video]() |
+| 10. Linear Models II: ANOVA| [Code]() | [Video]() |
+| 11. Linear Models III: Multiple Regression| [Code]() | [Video]()|
+| 12. Linear Models IV: Regularization| [Code]() | [Video]() |
