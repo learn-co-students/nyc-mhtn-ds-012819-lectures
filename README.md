@@ -34,4 +34,20 @@
 | 9. Linear Models I: Simple Linear Regression| [Code]() | [Video]() |
 | 10. Linear Models II: ANOVA| [Code]() | [Video]() |
 | 11. Linear Models III: Multiple Regression| [Code]() | [Video]()|
-| 12. Linear Models IV: Regularization| [Code]() | [Video]() |
+
+## Module 3 💖
+| Topic            | Code                | Video                |
+| -----            | ----                | -----                |
+| 1. Bias Variance Tradeoff Regularization | [Code]() | [Video]() |
+| 2. Linear Algebra| [Code]() | [Video]() |
+| 3. K Nearest Neighbors| [Code]()|
+| 4. Gradient Descent | [Code]() |
+| 5. Logistic Regression| [Code]() |
+| 6. Maximum Likelihood Estimate | [Code]()| [Video] ()|
+| 7. Decision Tree | [Code]() | [Video]() |
+| 8. Random Forest | [Code]() | [Video]() |
+| 9. Boosting| [Code]() | [Video]() |
+| 10. Natural Language Processing| [Code]() | [Video]() |
+| 11. Naive Bayes | [Code]() | [Video]()|
+| 12. Dimensionality Reduction| [Code]() | [Video]() |
+| 13. Evaluating Machine Learning Classifiers | [Code]()| [Video]()|
