@@ -40,3 +40,4 @@
 | -----            | ----                | -----                |
 | 1. Bias Variance Tradeoff | [Code](https://github.com/learn-co-students/nyc-mhtn-ds-012819-lectures/blob/master/Module_3/Bias_Variance_tradeoff/Bias_Variance_Tradeoff.ipynb) | |
 | 2. Regularization | [Code](https://github.com/learn-co-students/nyc-mhtn-ds-012819-lectures/blob/master/Module_3/Regularization/Regularization_Ridge_Lasso.ipynb) | |
+| 3. Linear Algebra | [Code](https://github.com/learn-co-students/nyc-mhtn-ds-012819-lectures/blob/master/Module_3/LinAlgebra/LinearAlgebra.ipynb) | |
